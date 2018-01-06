@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Website Price Calculator</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel='stylesheet' id='wpb-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700&#038;subset=greek&#038;ver=4.9.1' media='all' />
+		<!-- <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-select.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-skin-boxes.css" /> -->
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<!-- <script src="js/modernizr.custom.js"></script> -->
+	</head>
+</head>
+<body>
+
+	<div class="top-wrapper color-green">
+		<div class="top-content"> <a href="#" class="to-start">← ΑΡΧΗ</a></div>
+		<div class="top-content">ΠΟΣΟ ΚΟΣΤΙΖΕΙ ΜΙΑ ΙΣΤΟΣΕΛΙΔΑ;</div>
+		<div class="top-content"><div class="form-total"><span class="calculator-total-price">0</span>€</div></div>
+	</div>
+	<div class="form-wrap">
+				
+				<div class="form-screens">
+				 <div class="form-fields">
+				 <!-- WELCOME FIELD -->
+				 	<div id="step-welcome" class="form-step step-current step-visible">
+					    <div class="welcome-banner">
+					    	<img src="img/computer.svg"/>
+					    </div>
+
+					    <div class="step-info step-info-home fs-anim-upper">
+							<h3>Ας μάθουμε περισσότερα για τις ανάγκες σας</h3>
+							<p>Το ξεκίνημα είναι να μάθουμε τι τύπος ιστοσελίδας σας ενδιαφέρει. Θέλετε να κοινοποιήσετε τις ιδέες σας στο διαδίκτυο με ένα blog, να παρουσιάσετε την επιχείρηση σας, ή ενδιαφέρεστε να πραγματοποιήσετε πωλήσεις online;</p>
+							<a class="button-green calculator-start" href="#">ΑΣ ΞΕΚΙΝΗΣΟΥΜΕ</a>
+						</div>
+						
+    				</div>
+				 <!-- WELCOME FIELD END  -->
+				 <!-- GENERIC STUFF
+				 ------------------------------>
+				 	<div id="step-first" class="form-step step-hidden">
+				    <div class="step-info fs-anim-upper">
+					<h3>Ας μάθουμε περισσότερα για τις ανάγκες σας</h3>
+					<p>Το ξεκίνημα είναι να μάθουμε τι τύπος ιστοσελίδας σας ενδιαφέρει. Θέλετε να κοινοποιήσετε τις ιδέες σας στο διαδίκτυο με ένα blog, να παρουσιάσετε την επιχείρηση σας, ή ενδιαφέρεστε να πραγματοποιήσετε πωλήσεις online;</p>
+					</div>
+						<ul class="fs-anim-lower">
+							 <li>
+						        <input id="radio1" class="radio" type="radio" data-price="100" data-scenario="blog" name="radio">
+						        <label for="radio1">Ενδιαφέρομαι για blog <strong> +100€</strong></label>
+						      </li>
+						      <li>
+						        <input id="radio2" class="radio" type="radio"  data-price="100" data-scenario="corporate" name="radio">
+						        <label for="radio2">Επιθυμώ να παρουσιάσω την επιχείριση μου στο διαδίκτυο <strong> +100€</strong></label>
+						      </li>
+						      <li>
+						        <input id="radio3" class="radio" type="radio"  data-price="100" data-scenario="ecommerce" name="radio">
+						        <label for="radio3">Θέλω να πουλήσω προϊόντα ή υπηρεσίες online <strong> +100€</strong></label>
+						      </li>
+						        <li>
+						        <input id="radio3" class="radio" type="radio"  data-price="100" data-scenario="hotel" name="radio">
+						        <label for="radio3">Διαθέτω ξενοδοχειακή επιχείρηση <strong> +100€</strong></label>
+						      </li>
+	  
+						</ul>
+    				</div>
+				 		
+				 
+				 <!-- GENERIC STUFF ENDS
+				 ------------------------------>
+
+
+				 <!-- FINAL STEP 
+				 -------------------------------->
+				<div id="step-final" class="form-step step-hidden">
+					<div class="step-info fs-anim-upper">
+						<h3>To εκτιμώμενο κόστος της ιστοσελίδας σας</h3>
+						<h2 class="calculator-final-cost">2000€</h2>
+						<a href="#" class="info-link">ΑΝΑΛΥΣΗ ΤΙΜΗΣ</a>
+						<p>Το ξεκίνημα είναι να μάθουμε τι τύπος ιστοσελίδας σας ενδιαφέρει. Θέλετε να κοινοποιήσετε τις ιδέες σας στο διαδίκτυο με ένα blog, να παρουσιάσετε την επιχείρηση σας, ή ενδιαφέρεστε να πραγματοποιήσετε πωλήσεις online;</p>
+						<a href="#" class="button-green">ΕΠΙΚΟΙΝΩΝΗΣΤΕ ΜΑΖΙ ΜΑΣ ΓΙΑ ΠΕΡΙΣΣΟΤΕΡΑ</a>
+						<a href="#" class="info-link">ΠΛΗΡΟΦΟΡΙΕΣ ΓΙΑ ΤΟ ΚΟΣΤΟΣ</a>
+					</div>
+				</div>
+				<!-- FINAL STEP 
+				 -------------------------------->
+				 	</div><!-- form-fields -->
+				 </div> <!--form-screens-->
+    </div>
+<!-- FORM WRAP ENDS -->
+	<div class="bottom-wrapper color-green">
+		<div class="calculator-credits">CREATED BY OPEN.TECH | ABOUT | HOME</div>
+		<div class="calculator-index">1/6</div>
+	</div>
+
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"/></script>
+</body>
+</html>
