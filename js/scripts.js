@@ -3,7 +3,9 @@ jQuery(window).on("load", function() {
 
 	var currentCost;
 	var currentStep = $('#step-first');
+	var stepIndex = 0;
 	var formStatus;
+
 
 
 	$('.calculator-start').click(function(){
@@ -12,8 +14,19 @@ jQuery(window).on("load", function() {
 		$('#step-welcome').removeClass('step-visible');
 		$('#step-first').slideUp(200).delay(500);
 		setTimeout(function(){
-			$('#step-first').removeClass('step-hidden').addClass('step-visible')}, 700);
-		
+			$('#step-first').removeClass('step-hidden').addClass('step-visible');
+			$('.to-start').removeClass('calculator-hidden');
+			stepIndex +=1; 
+			$('.step-indicator').text(stepIndex);
+
+		}, 700);
+
+
+	});
+
+	$('.to-previous').click(function(){
+		previousScreen();
+
 	});
 
 	$('.form-step input').change(function(){
@@ -31,6 +44,8 @@ jQuery(window).on("load", function() {
 		}
 	});
 
+
+
 	$('.form-next').click(function(){
 	 	switchScreen();
 	});
@@ -45,11 +60,30 @@ jQuery(window).on("load", function() {
 		currentStep = $('#step-first');
 	}
 
+	function previousScreen(){
+		currentStep.removeClass('step-current step-visible').addClass('step-hidden');
+		currentStep = currentStep.prev();
+
+		currentStep.removeClass('step-hidden').addClass('step-current step-visible');
+
+		//Show back to home button instead of previous
+		if(currentStep.data('form-step')==1){
+			$('.to-start').removeClass('calculator-hidden').addClass('calculator-visible');
+			$('.to-previous').removeClass('calculator-visible').addClass('calculator-hidden');
+		}
+
+	}
+
 	function switchScreen(){
+		 $('.to-start').addClass('calculator-hidden');
+		$('.to-previous').removeClass('calculator-hidden').addClass('calculator-visible');
 		 if(formStatus!='end'){
 			currentStep.removeClass('step-current step-visible').addClass('step-hidden');
 			currentStep = currentStep.next();
+			stepIndex +=1; 
+			$('.step-indicator').text(stepIndex);
 			currentStep.removeClass('step-hidden').addClass('step-current fs-show');
+
 			if(currentStep.is("#step-final")){
 				formStatus = 'end'; 
 			}
@@ -80,7 +114,6 @@ jQuery(window).on("load", function() {
 			duration: 1000,
 			easing: 'swing',
 			step: function (now) {
-				// Verificar si es decimal o no
 				var numText = (number % 1 !== 0 ? now.toFixed(1) : Math.round(now));
 				element.text(numText);
 			}

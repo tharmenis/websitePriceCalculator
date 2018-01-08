@@ -20,6 +20,11 @@ h1,h2,h3,h4,h4{
 
 
 
+.calculator-hidden{
+  display:none;
+}
+
+
 .step-info{
   text-align:center;
 }
@@ -115,6 +120,7 @@ h1,h2,h3,h4,h4{
 .calculator-index{
   text-align:right;
 }
+
 .form-wrap{
 	display: flex;
     justify-content: center;
@@ -122,7 +128,6 @@ h1,h2,h3,h4,h4{
     flex-direction: column;
     height:90vh;
     overflow: hidden;
-
 }
 
 .form-details{
@@ -139,22 +144,18 @@ h1,h2,h3,h4,h4{
 }
 
 
-
-
 .form-control{
-	
 	width: 20%;
-        padding: 12px 0;
-   
-    font-size: 20px;
-    text-align: center;
+  padding: 12px 0;
+  font-size: 20px;
+  text-align: center;
 }
 
 .form-control a{
 	border: solid 1px #4bb590;
-    color: #4bb590;
-    padding: 10px 34px;
-    text-decoration: none;
+  color: #4bb590;
+  padding: 10px 34px;
+  text-decoration: none;
 }
 
 
@@ -252,12 +253,12 @@ input.toggle + label:after {
 }
 
 input.toggle + label:before {
-    right: 2rem;
-   top: 0.8rem;
-    bottom: 2.2rem;
-    border-radius: 5rem;
-    transition: background 0.3s;
-    background-color: rgba(0, 0, 0, 0.2);
+  right: 2rem;
+  top: 0.8rem;
+  bottom: 2.2rem;
+  border-radius: 5rem;
+  transition: background 0.3s;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 

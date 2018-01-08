@@ -24,7 +24,7 @@
 <body>
 
 	<div class="top-wrapper color-green">
-		<div class="top-content"> <a href="#" class="to-start">← ΑΡΧΗ</a></div>
+		<div class="top-content"> <a href="#" class="to-start calculator-hidden">← ΑΡΧΗ</a> <a href="#" data-previous-screen="0" class="to-previous calculator-hidden">← ΠΡΟΗΓΟΥΜΕΝΟ</a></div>
 		<div class="top-content">ΠΟΣΟ ΚΟΣΤΙΖΕΙ ΜΙΑ ΙΣΤΟΣΕΛΙΔΑ;</div>
 		<div class="top-content"><div class="form-total"><span class="calculator-total-price">0</span>€</div></div>
 	</div>
@@ -48,7 +48,7 @@
 				 <!-- WELCOME FIELD END  -->
 				 <!-- GENERIC STUFF
 				 ------------------------------>
-				 	<div id="step-first" class="form-step step-hidden">
+				 	<div id="step-first" class="form-step step-hidden" data-form-step="0">
 				    <div class="step-info fs-anim-upper">
 					<h3>Ας μάθουμε περισσότερα για τις ανάγκες σας</h3>
 					<p>Το ξεκίνημα είναι να μάθουμε τι τύπος ιστοσελίδας σας ενδιαφέρει. Θέλετε να κοινοποιήσετε τις ιδέες σας στο διαδίκτυο με ένα blog, να παρουσιάσετε την επιχείρηση σας, ή ενδιαφέρεστε να πραγματοποιήσετε πωλήσεις online;</p>
@@ -81,7 +81,7 @@
 
 				 <!-- FINAL STEP 
 				 -------------------------------->
-				<div id="step-final" class="form-step step-hidden">
+				<div id="step-final" class="form-step step-hidden" data-form-step="6">
 					<div class="step-info fs-anim-upper">
 						<h3>To εκτιμώμενο κόστος της ιστοσελίδας σας</h3>
 						<h2 class="calculator-final-cost">2000€</h2>
@@ -99,7 +99,7 @@
 <!-- FORM WRAP ENDS -->
 	<div class="bottom-wrapper color-green">
 		<div class="calculator-credits">CREATED BY OPEN.TECH | ABOUT | HOME</div>
-		<div class="calculator-index">1/6</div>
+		<div class="calculator-index"><span class="step-indicator">0</span>/6</div>
 	</div>
 
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
