@@ -18,6 +18,11 @@ h1,h2,h3,h4,h4{
 }
 
 
+.bottom-wrapper a, .bottom-wrapper a:visited, .bottom-wrapper a:active, .bottom-wrapper a:hover{
+  color:#4bb590;
+  text-decoration: none;
+}
+
 
 
 .calculator-hidden{
@@ -190,6 +195,13 @@ h1,h2,h3,h4,h4{
 
 /* SWITCHES AND CHECKBOXES 
 ******************************************/
+
+
+textarea {
+    width: 100%;
+    margin: 20px 10px 20px 10px;
+   
+}
 
 .switch-container{
   float:left;

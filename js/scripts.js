@@ -19,14 +19,22 @@ jQuery(window).on("load", function() {
 			stepIndex +=1; 
 			$('.step-indicator').text(stepIndex);
 
+		$('.calculator-index').text("1/6");
 		}, 700);
-
-
 	});
 
 	$('.to-previous').click(function(){
 		previousScreen();
 
+	});
+
+	$('.to-start').click(function(){
+		$('.calculator-index').text("0/6");
+		$('#step-first').removeClass('step-visible').addClass('step-hidden');
+
+		$('#step-welcome').removeClass('step-hidden').show();
+		$('.to-start').addClass('calculator-hidden');
+		//$('#step-welcome').slideUp(200).delay(500);
 	});
 
 	$('.form-step input').change(function(){
@@ -50,14 +58,15 @@ jQuery(window).on("load", function() {
 	 	switchScreen();
 	});
 
-	$('.form-previous').click(function(){
-		currentStep.removeClass('step-current step-visible').addClass('step-hidden');
-		currentStep = currentStep.next();
-		currentStep.removeClass('step-hidden').addClass('step-current step-visible');
-	});
+	// $('.form-previous').click(function(){
+	// 	currentStep.removeClass('step-current step-visible').addClass('step-hidden');
+	// 	currentStep = currentStep.next();
+	// 	currentStep.removeClass('step-hidden').addClass('step-current step-visible');
+	// });
 
 	function calculatorInitialize(){
-		currentStep = $('#step-first');
+		console.log('initialised!');
+		
 	}
 
 	function previousScreen(){
@@ -65,12 +74,13 @@ jQuery(window).on("load", function() {
 		currentStep = currentStep.prev();
 
 		currentStep.removeClass('step-hidden').addClass('step-current step-visible');
-
+		$('.calculator-index').text(currentStep.data('form-step')+"/6");
 		//Show back to home button instead of previous
 		if(currentStep.data('form-step')==1){
 			$('.to-start').removeClass('calculator-hidden').addClass('calculator-visible');
 			$('.to-previous').removeClass('calculator-visible').addClass('calculator-hidden');
 		}
+
 
 	}
 
@@ -83,7 +93,7 @@ jQuery(window).on("load", function() {
 			stepIndex +=1; 
 			$('.step-indicator').text(stepIndex);
 			currentStep.removeClass('step-hidden').addClass('step-current fs-show');
-
+			$('.calculator-index').text(currentStep.data('form-step')+"/6");
 			if(currentStep.is("#step-final")){
 				formStatus = 'end'; 
 			}

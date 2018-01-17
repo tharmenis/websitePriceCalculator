@@ -33,7 +33,7 @@
 				<div class="form-screens">
 				 <div class="form-fields">
 				 <!-- WELCOME FIELD -->
-				 	<div id="step-welcome" class="form-step step-current step-visible">
+				 	<div id="step-welcome" class="form-step step-current step-visible" data-form-step="0">
 					    <div class="welcome-banner">
 					    	<img src="img/computer.svg"/>
 					    </div>
@@ -48,7 +48,7 @@
 				 <!-- WELCOME FIELD END  -->
 				 <!-- GENERIC STUFF
 				 ------------------------------>
-				 	<div id="step-first" class="form-step step-hidden" data-form-step="0">
+				 	<div id="step-first" class="form-step step-hidden" data-form-step="1">
 				    <div class="step-info fs-anim-upper">
 					<h3>Ας μάθουμε περισσότερα για τις ανάγκες σας</h3>
 					<p>Το ξεκίνημα είναι να μάθουμε τι τύπος ιστοσελίδας σας ενδιαφέρει. Θέλετε να κοινοποιήσετε τις ιδέες σας στο διαδίκτυο με ένα blog, να παρουσιάσετε την επιχείρηση σας, ή ενδιαφέρεστε να πραγματοποιήσετε πωλήσεις online;</p>
@@ -73,7 +73,43 @@
 	  
 						</ul>
     				</div>
+
+    				<div id="step-first" class="form-step step-hidden" data-form-step="2">
+				    <div class="step-info fs-anim-upper">
+					<h3>Ας μάθουμε περισσότερα για τις ανάγκες σας</h3>
+					<p>Το ξεκίνημα είναι να μάθουμε τι τύπος ιστοσελίδας σας ενδιαφέρει. Θέλετε να κοινοποιήσετε τις ιδέες σας στο διαδίκτυο με ένα blog, να παρουσιάσετε την επιχείρηση σας, ή ενδιαφέρεστε να πραγματοποιήσετε πωλήσεις online;</p>
+					</div>
+						<ul class="fs-anim-lower">
+							 <li>
+						        <input id="radio5" class="radio" type="radio" data-price="100" data-scenario="blog" name="radio">
+						        <label for="radio5">Ενδιαφέρομαι για blog <strong> +100€</strong></label>
+						      </li>
+						      <li>
+						        <input id="radio6" class="radio" type="radio"  data-price="100" data-scenario="corporate" name="radio">
+						        <label for="radio8">Επιθυμώ να παρουσιάσω την επιχείριση μου στο διαδίκτυο <strong> +100€</strong></label>
+						      </li>
+						      <li>
+						        <input id="radio7" class="radio" type="radio"  data-price="100" data-scenario="ecommerce" name="radio">
+						        <label for="radio8">Θέλω να πουλήσω προϊόντα ή υπηρεσίες online <strong> +100€</strong></label>
+						      </li>
+						        <li>
+						        <input id="radio8" class="radio" type="radio"  data-price="100" data-scenario="hotel" name="radio">
+						        <label for="radio8">Διαθέτω ξενοδοχειακή επιχείρηση <strong> +100€</strong></label>
+						      </li>
+	  
+						</ul>
+    				</div>
 				 		
+				 	<div id="step-2" class="form-step step-hidden" data-form-step="3">
+				    <div class="step-info fs-anim-upper">
+					<h3>Ας μάθουμε περισσότερα για τις ανάγκες σας</h3>
+					<p>Το ξεκίνημα είναι να μάθουμε τι τύπος ιστοσελίδας σας ενδιαφέρει. Θέλετε να κοινοποιήσετε τις ιδέες σας στο διαδίκτυο με ένα blog, να παρουσιάσετε την επιχείρηση σας, ή ενδιαφέρεστε να πραγματοποιήσετε πωλήσεις online;</p>
+					</div>
+						<div class="fs-anim-lower">
+							<textarea rows="10"></textarea>
+	  
+						</div>
+    				</div>
 				 
 				 <!-- GENERIC STUFF ENDS
 				 ------------------------------>
@@ -97,11 +133,10 @@
 				 </div> <!--form-screens-->
     </div>
 <!-- FORM WRAP ENDS -->
-	<div class="bottom-wrapper color-green">
-		<div class="calculator-credits">CREATED BY OPEN.TECH | ABOUT | HOME</div>
-		<div class="calculator-index"><span class="step-indicator">0</span>/6</div>
+<div class="bottom-wrapper color-green">
+		<div class="calculator-credits">CREATED BY OPEN.TECH | <a href="https://open-tech.gr/gia-emas/">ABOUT</a> | <a href="https://open-tech.gr">HOME</a></div>
+		<div class="calculator-index">0/6</div>
 	</div>
-
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/scripts.js"/></script>
 </body>
