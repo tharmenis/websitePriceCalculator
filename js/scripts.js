@@ -65,7 +65,7 @@ jQuery(window).on("load", function() {
 	// });
 
 	function calculatorInitialize(){
-		console.log('initialised!');
+		
 		
 	}
 
@@ -85,7 +85,7 @@ jQuery(window).on("load", function() {
 	}
 
 	function switchScreen(){
-		 $('.to-start').addClass('calculator-hidden');
+		$('.to-start').addClass('calculator-hidden');
 		$('.to-previous').removeClass('calculator-hidden').addClass('calculator-visible');
 		 if(formStatus!='end'){
 			currentStep.removeClass('step-current step-visible').addClass('step-hidden');
@@ -96,6 +96,8 @@ jQuery(window).on("load", function() {
 			$('.calculator-index').text(currentStep.data('form-step')+"/6");
 			if(currentStep.is("#step-final")){
 				formStatus = 'end'; 
+				$('.to-previous').removeClass('calculator-visible').addClass('calculator-hidden');
+				$('.restart').removeClass('calculator-hidden').addClass('calculator-visible');
 			}
 		}
 	}
