@@ -26,7 +26,21 @@
 	<div class="top-wrapper color-green">
 		<div class="top-content"><a href="http://opentech.webfactional.com/calculator/" class="restart calculator-hidden">ΞΕΚΙΝΗΣΤΕ ΞΑΝΑ</a> <a href="#" class="to-start calculator-hidden">← ΑΡΧΗ</a> <a href="#" data-previous-screen="0" class="to-previous calculator-hidden">← ΠΡΟΗΓΟΥΜΕΝΟ</a></div>
 		<div class="top-content">ΠΟΣΟ ΚΟΣΤΙΖΕΙ ΜΙΑ ΙΣΤΟΣΕΛΙΔΑ;</div>
-		<div class="top-content"><div class="form-total"><span class="calculator-total-price">0</span>€</div></div>
+		<div class="top-content">
+			<div class="form-total">
+				<span class="calculator-total-price">0</span>€
+			</div>
+			<div class="social-shares">
+				<!-- $face_url =  'http://www.facebook.com/share.php?u='. urlencode(get_the_permalink()) . '&title=' . urlencode(get_the_title());
+				$twitter_url= 'http://twitter.com/home?status='. urlencode(get_the_title()). '+'. urlencode(get_the_permalink()); -->
+
+				<ul class="share-list">
+					<li><a class="share-button facebook-share" href="#"></a></li>
+					
+					<li><a class="share-button twitter-share" href="#"></a></li>
+				</ul>
+			</div>
+		</div>
 	</div>
 	<div class="form-wrap">
 				
@@ -39,9 +53,9 @@
 					    </div>
 
 					    <div class="step-info step-info-home fs-anim-upper">
-							<h3>Ας μάθουμε περισσότερα για τις ανάγκες σας</h3>
-							<p>Το ξεκίνημα είναι να μάθουμε τι τύπος ιστοσελίδας σας ενδιαφέρει. Θέλετε να κοινοποιήσετε τις ιδέες σας στο διαδίκτυο με ένα blog, να παρουσιάσετε την επιχείρηση σας, ή ενδιαφέρεστε να πραγματοποιήσετε πωλήσεις online;</p>
-							<a class="button-green calculator-start" href="#">ΑΣ ΞΕΚΙΝΗΣΟΥΜΕ</a>
+							<!-- <h3>Ας μάθουμε περισσότερα για τις ανάγκες σας</h3> -->
+							<p>Δημιουργήσαμε αυτή την εφαρμογή ώστε να σας βοηθήσουμε να κατανοήσετε καλύτερα πώς υπολογίζεται το κόστος μίας ιστοδελίδας. Βρείτε την απάντηση συμπληρώνοντας τις επόμενες ερωτήσεις σε λιγότερο από 2 λεπτά.</p>
+							<a class="button-green calculator-start" href="#">ΞΕΚΙΝΑΜΕ;</a>
 						</div>
 						
     				</div>
@@ -50,27 +64,19 @@
 				 ------------------------------>
 				 	<div id="step-first" class="form-step step-hidden" data-form-step="1">
 				    <div class="step-info fs-anim-upper">
-					<h3>Ας μάθουμε περισσότερα για τις ανάγκες σας</h3>
-					<p>Το ξεκίνημα είναι να μάθουμε τι τύπος ιστοσελίδας σας ενδιαφέρει. Θέλετε να κοινοποιήσετε τις ιδέες σας στο διαδίκτυο με ένα blog, να παρουσιάσετε την επιχείρηση σας, ή ενδιαφέρεστε να πραγματοποιήσετε πωλήσεις online;</p>
+					 <h3>Website</h3>
+					<p>Θέλετε μια ιστοσελίδα με custom σχεδίαση στις ανάγκες σας ή τη χρήση ενός template;</p>
 					</div>
 						<ul class="fs-anim-lower">
 							 <li>
 						        <input id="radio1" class="radio" type="radio" data-price="100" data-scenario="blog" name="radio">
-						        <label for="radio1">Ενδιαφέρομαι για blog <strong> +100€</strong></label>
+						        <label for="radio1">Template<strong> +100€</strong></label>
 						      </li>
 						      <li>
 						        <input id="radio2" class="radio" type="radio"  data-price="100" data-scenario="corporate" name="radio">
-						        <label for="radio2">Επιθυμώ να παρουσιάσω την επιχείριση μου στο διαδίκτυο <strong> +100€</strong></label>
+						        <label for="radio2">Custom <strong> +100€</strong></label>
 						      </li>
-						      <li>
-						        <input id="radio3" class="radio" type="radio"  data-price="100" data-scenario="ecommerce" name="radio">
-						        <label for="radio3">Θέλω να πουλήσω προϊόντα ή υπηρεσίες online <strong> +100€</strong></label>
-						      </li>
-						        <li>
-						        <input id="radio4" class="radio" type="radio"  data-price="100" data-scenario="hotel" name="radio">
-						        <label for="radio4">Διαθέτω ξενοδοχειακή επιχείρηση <strong> +100€</strong></label>
-						      </li>
-	  
+						     
 						</ul>
     				</div>
 
@@ -148,9 +154,9 @@
 						<h3>To εκτιμώμενο κόστος της ιστοσελίδας σας</h3>
 						<h2 class="calculator-final-cost">2000€</h2>
 						<a href="#" class="info-link">ΑΝΑΛΥΣΗ ΤΙΜΗΣ</a>
-						<p>Το ξεκίνημα είναι να μάθουμε τι τύπος ιστοσελίδας σας ενδιαφέρει. Θέλετε να κοινοποιήσετε τις ιδέες σας στο διαδίκτυο με ένα blog, να παρουσιάσετε την επιχείρηση σας, ή ενδιαφέρεστε να πραγματοποιήσετε πωλήσεις online;</p>
-						<a href="#" class="button-green">ΕΠΙΚΟΙΝΩΝΗΣΤΕ ΜΑΖΙ ΜΑΣ ΓΙΑ ΠΕΡΙΣΣΟΤΕΡΑ</a>
-						<a href="#" class="info-link">ΠΛΗΡΟΦΟΡΙΕΣ ΓΙΑ ΤΟ ΚΟΣΤΟΣ</a>
+						<p>Έτοιμοι να ξεκινήσουμε; Στην Open Technologies μια ομάδα web designers, seo specialists, marketers, είναι στη διάθεση σας.</p>
+						<a href="#" class="button-green">ΞΕΚΙΝΗΣΤΕ ΕΝΑ PROJECT ΤΩΡΑ!</a>
+						<a href="#" class="info-link">ΔΕΙΤΕ ΤΟ PORTFOLIO MΑΣ</a>
 					</div>
 				</div>
 				<!-- FINAL STEP 

@@ -115,6 +115,10 @@ h1,h2,h3,h4,h4{
       font-weight:700;
 }
 
+.form-total{
+  display:none;
+}
+
 
 .calculator-credits {
     position: relative;
@@ -445,4 +449,42 @@ input.radio + label:before {
 
 @keyframes animShowPrev {
 	from { opacity: 0; -webkit-transform: translate3d(0,-500px,0); transform: translate3d(0,-500px,0); }
+}
+
+
+.share-list {
+  list-style-type: none;
+  z-index: 100;
+}
+
+.share-list li{
+  display:inline;
+  float:left;
+  margin-right:5px;
+}
+
+.share-list a {
+ width: 30px;
+    height: 30px;
+    display: block;
+    opacity: 0.6;
+     -webkit-transition: opacity 0.3s cubic-bezier(0.915, 0.01, 0.075, 0.995);
+  -moz-transition: opacity 0.3s cubic-bezier(0.915, 0.01, 0.075, 0.995);
+  -o-transition: opacity 0.3s cubic-bezier(0.915, 0.01, 0.075, 0.995);
+  transition: opacity 0.3s cubic-bezier(0.915, 0.01, 0.075, 0.995);
+
+}
+
+.share-list a:hover{
+  opacity:1;
+}
+
+.facebook-share {
+    background: url(img/facebook-logo.svg) center center no-repeat;
+    background-size: contain;
+}
+
+.twitter-share {
+    background: url(img/twitter-logo.svg) center center no-repeat;
+    background-size: contain;
 }

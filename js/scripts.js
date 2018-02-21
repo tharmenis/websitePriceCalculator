@@ -9,7 +9,8 @@ jQuery(window).on("load", function() {
 
 
 	$('.calculator-start').click(function(){
-
+		$('.form-total').show();
+		$('.social-shares').hide();
 		$('#step-welcome').fadeOut(500);
 		$('#step-welcome').removeClass('step-visible');
 		$('#step-first').slideUp(200).delay(500);
@@ -19,7 +20,7 @@ jQuery(window).on("load", function() {
 			stepIndex +=1; 
 			$('.step-indicator').text(stepIndex);
 
-		$('.calculator-index').text("1/6");
+		$('.calculator-index').text("1/10");
 		}, 700);
 	});
 
@@ -29,9 +30,8 @@ jQuery(window).on("load", function() {
 	});
 
 	$('.to-start').click(function(){
-		$('.calculator-index').text("0/6");
+		$('.calculator-index').text("0/10");
 		$('#step-first').removeClass('step-visible').addClass('step-hidden');
-
 		$('#step-welcome').removeClass('step-hidden').show();
 		$('.to-start').addClass('calculator-hidden');
 		//$('#step-welcome').slideUp(200).delay(500);
